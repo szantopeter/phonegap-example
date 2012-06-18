@@ -2,7 +2,8 @@ phonegap-example
 ================
 
 An android application example using
- - phonegap
+ - PhoneGap
+ - android events (home, search button)
  - HTML5 canvas
  - JQuery mobile
 
