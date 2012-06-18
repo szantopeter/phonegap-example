@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery.mobile/jquery-1.7.2.min.js">
+        </script>
+        <script src="jquery.mobile/jquery.mobile-1.1.0.min.js">
+        </script>
+        <script src="cordova-1.8.1.js">
+        </script>
+        <script src="common.js">
+        </script>
+    </head>
+    <body">
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <a class="hidden" data-role="button" data-transition="fade" href="#page1" data-icon="delete" data-iconpos="right">
+                    Close2
+                </a>
+                <h3>
+                    Menu
+                </h3>
+                <a id="close" data-role="button" data-transition="fade" href="#page1" data-icon="delete" data-iconpos="right">
+                    Close
+                </a>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <a id="animation" data-role="button" href="#">
+                    Show me some animation
+                </a>
+                <a data-role="button" data-transition="fade" href="form.html">
+                    Show me a form
+                </a>
+                <a id="google" data-role="button" data-transition="fade" href="#" data-icon="search" data-iconpos="right">
+                    Show me a google search
+                </a>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+            </div>
+        </div>
+        <script>
+        
+        
+        $(document).ready(function() {
+			$("#close").click(function () {
+		        device.exitApp(); 
+			});
+			
+			$("#animation").click(function () {
+				location.replace("animation.html");
+			});
+
+			$("#google").click(function () {
+				location.replace("google.html");
+			});
+        });        
+        
+        </script>
+    </body>
+</html>

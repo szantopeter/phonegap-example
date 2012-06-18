@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+        <script src="cordova-1.8.1.js">
+        </script>
+        <script src="common.js">
+        </script>
+    </head>
+    <body">
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <a class="hidden" data-role="button" data-transition="fade" href="#page1">
+                    Button
+                </a>
+                <h3>
+                    Header
+                </h3>
+                <a data-role="button" data-rel="back" data-transition="fade" href="#page1" data-icon="back" data-iconpos="right">
+                    Back
+                </a>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <form action="">
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="textinput1">
+                                Text field
+                            </label>
+                            <input id="textinput1" placeholder="" value="hello" type="text" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="toggleswitch1">
+                                Toggle
+                            </label>
+                            <select name="toggleswitch1" id="toggleswitch1" data-theme="" data-role="slider">
+                                <option value="off">
+                                    Off
+                                </option>
+                                <option value="on">
+                                    On
+                                </option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <label for="slider1">
+                                Value:
+                            </label>
+                            <input type="range" name="slider" id="slider1" value="50" min="0" max="100" data-highlight="false" />
+                        </fieldset>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="vertical">
+                            <legend>
+                                Choose:
+                            </legend>
+                            <input name="radiobuttons1" id="radio1" value="" type="radio" />
+                            <label for="radio1">
+                                Option
+                            </label>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
