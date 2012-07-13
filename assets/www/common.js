@@ -10,7 +10,7 @@ function onLoad() {
 }
 
 function onMenuKeyDown() {
-	window.location = "menu.html";
+	window.location = "index.html";
 }
 
 function onSearchKeyDown() {
